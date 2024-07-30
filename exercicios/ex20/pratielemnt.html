@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elemento</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        div {
+            
+            text-align: center;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+            border: 3px solid black;
+            display: inline-block;
+        }
+
+        div > img {
+            display: none;
+        }
+
+        div:hover > img {
+            display: block;
+        }
+
+        div:hover {
+            background-color: aqua;
+        }
+
+        div::before {
+            content: '⚊';
+        }
+
+        div::after{
+            content: '⚊';
+        }
+    </style>
+</head>
+<body>
+    <h1>Praticando Pseudo-elemento</h1>
+    <p>Nessas dives vao conter um simbolo depois do elemnto</p>
+    <div id="1">1 
+        <img src="imagens/Papel-de-Parede-para-Celular-de-Cachorro-Fofo-1.png" alt="cachorrinho" width="100px" height="100px"></div>
+
+    <div id="2">2
+        <img src="imagens/Papel-de-Parede-para-Celular-de-Cachorro-Fofo-1.png" alt="cachorrinho"  width="100px" height="100px">
+    </div>
+
+    <div id="3">3
+        <img src="imagens/Papel-de-Parede-para-Celular-de-Cachorro-Fofo-1.png" alt="cachorrinho"  width="100px" height="100px">
+    </div>
+
+</body>
+</html>
